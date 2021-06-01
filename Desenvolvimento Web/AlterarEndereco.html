@@ -12,34 +12,53 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/Style.css">
 </head>
-<body>
-    <!-- Inicio do formulario -->
-    <form method="get" action=".">
-        <div class="form-group col-md-1">
-            <label>CEP</label>
-            <input name="cep" type="text" class="form-control" id="cep" value="" size="10" maxlength="9">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-1">
-                <label>Estado</label>
-                <input name="uf" type="text" id="uf" class="form-control" size="2"> </input>
-            </div>
-            <div class="form-group col-md-4">
-                <label>Cidade</label>
-                <input name="cidade" type="text" class="form-control" id="cidade" size="40">
-            </div>
-        </div>
-        <div class="form-group">
-            <label>Rua</label>
-            <input name="rua" type="text" class="form-control" id="rua" placeholder="Rua dos Bobos, nº 0" size="60">
-        </div>
-        <div class="form-group">
-            <label>Bairro</label>
-            <input type="text" class="form-control" id="bairro" placeholder="Apartamento, hotel, casa, etc.">
-        </div>
 
+<body>
+
+    <div class="card">
+        <form method="get" action="." class="formulario">
+            <div class="card-header">
+                Alterar Endereço:
+            </div>
+            <div class="card-body">
+                <div class="form-group col-md-2">
+                    <label>CEP:</label>
+                    <input name="cep" type="text" class="form-control" id="cep" value="" size="10" maxlength="9">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Rua</label>
+                    <input name="rua" type="text" class="form-control" id="rua" placeholder="" size="60">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-1">
+                        <label>Estado</label>
+                        <input name="uf" type="text" id="uf" class="form-control" size="2"> </input>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Cidade</label>
+                        <input name="cidade" type="text" class="form-control" id="cidade" size="40">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-1">
+                        <label>Nº</label>
+                        <input name="numero" type="text" id="numero" class="form-control" size="5"> </input>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Complemento</label>
+                        <input name="Complemento" type="text" id="Complemento" class="form-control" size="10"> </input>
+                    </div>
+                </div>
+            </div>
+        </form>
         <button type="submit" class="btn btn-primary">Salvar</button>
-    </form>
+        <button type="button" class="btn btn-danger">Cancelar</button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -51,7 +70,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="assets/validacao.js"></script>
+    <script src="assets/validacao.js"></script>
 </body>
 
 </html>

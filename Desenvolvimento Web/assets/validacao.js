@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 
     function limpa_formulário_cep() {
@@ -8,7 +7,6 @@ $(document).ready(function () {
         $("#bairro").val("");
         $("#cidade").val("");
         $("#uf").val("");
-        $("#ibge").val("");
     }
 
     //Quando o campo cep perde o foco.
@@ -31,7 +29,6 @@ $(document).ready(function () {
                 $("#bairro").val("...");
                 $("#cidade").val("...");
                 $("#uf").val("...");
-                $("#ibge").val("...");
 
                 //Consulta o webservice viacep.com.br/
                 $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
@@ -63,3 +60,4 @@ $(document).ready(function () {
         }
     });
 });
+
